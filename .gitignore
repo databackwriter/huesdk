@@ -5,3 +5,5 @@ huesdk.egg-info/
 .DS_Store
 .idea/
 venv/
+.env
+huesdk/__pycache__/*
