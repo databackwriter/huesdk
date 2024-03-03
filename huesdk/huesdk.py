@@ -81,7 +81,7 @@ class Hue:
         groups = []
         for key in result:
             groups.append(Group(sdk=self, group_id=key, **result[key]))
-
+        print("got groups")
         return groups
 
     def _get_one_group(self, id_=None):
