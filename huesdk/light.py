@@ -1,6 +1,6 @@
 import json
 
-from huesdk.generics import hexa_to_xy
+from generics import hexa_to_xy
 
 
 class Light:

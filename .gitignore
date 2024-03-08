@@ -7,3 +7,4 @@ huesdk.egg-info/
 venv/
 .env
 huesdk/__pycache__/*
+.vscode/*

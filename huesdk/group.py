@@ -1,6 +1,6 @@
 import json
 
-from huesdk.generics import hexa_to_xy
+from generics import hexa_to_xy
 
 
 class Group:
@@ -19,6 +19,9 @@ class Group:
             self.bri = kwargs['action'].get('bri', None)
             self.hue = kwargs['action'].get('hue', None)
             self.sat = kwargs['action'].get('sat', None)
+    
+        if 'lights' in kwargs:
+            self.lights = kwargs['lights']
 
     def _put(self, body):
         response = self.sdk.put(uri=f'/{self.sdk.username}/groups/{self.id_}', body=json.dumps(body))

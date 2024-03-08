@@ -1,8 +1,8 @@
 import requests
 
-from huesdk.light import Light
-from huesdk.group import Group
-from huesdk.schedule import Schedule
+from light import Light
+from group import Group
+from schedule import Schedule
 
 
 class Hue:
