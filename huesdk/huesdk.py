@@ -1,6 +1,6 @@
 import requests
 
-from light import Light
+from huesdk.light import Light
 from group import Group
 from schedule import Schedule
 
