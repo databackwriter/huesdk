@@ -10,5 +10,8 @@ warnings.filterwarnings("ignore")
 
 groups = hue.get_groups()
 for group in groups:
-    x = hue._get_one_group(group.id_)
+    x = hue.get_group(group.id_)
+    y = hue.get_light(x.lights[0])
+    y.on()
+
     print(group)
