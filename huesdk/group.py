@@ -1,6 +1,6 @@
 import json
 
-from generics import hexa_to_xy
+from huesdk.generics import hexa_to_xy
 
 
 class Group:

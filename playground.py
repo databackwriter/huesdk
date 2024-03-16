@@ -1,3 +1,9 @@
+from pathlib import Path
+from os import chdir
+
+print(Path.cwd())
+
+
 from huesdk import Hue
 import os
 BRIDGE_IP = os.getenv('HUE_BRIDGE_IP')
